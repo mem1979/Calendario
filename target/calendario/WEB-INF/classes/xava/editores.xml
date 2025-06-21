@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding = "ISO-8859-1"?>
+ 
+<!DOCTYPE editores SYSTEM "dtds/editores.dtd">
+
+<!-- 
+Aprende a definir tus propios editores en: 
+https://www.openxava.org/OpenXavaDoc/docs/customizing_en.html 
+-->
+ 
+<editores>
+
+	<!--  
+	Para probar TuEditor descomenta el siguiente código 
+	y anota tu propiedad con @Editor("TuEditor")
+	
+ 	<editor nombre="TuEditor" url="tuEditor.jsp"/>
+ 	-->
+ 	
+ 	<!-- Editor genérico para cualquier colección con la anotación -->
+		<editor nombre="yearCalendarEditor" url="yearCalendarEditor.jsp">
+			   <para-anotacion anotacion="com.sta.calendario.anotaciones.Calendarizado"/>
+		</editor>
+ 	
+</editores>
